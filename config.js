@@ -79,10 +79,10 @@ window.SITE_CONFIG = {
 
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Railway operations are hard to assess.",
-			"3D asset creation is time-consuming.",
-			"2D models lack immersion.",
-			"Results are difficult to communicate."
+			"Human-driven traffic (HDV) exhibits variance in perception, braking, and gaps that leads to congestion and stop-and-go instability.",
+			"Municipalities cannot infer 100% CAV fleet speed-density performance solely from human-driven baselines.",
+			"Signal re-timing requires quantitative before-and-after evidence, alongside assessment of potential side-street delay trade-offs.",
+			"Committing municipal capital investments without empirical field calibration, network-wide routing, and mixed-traffic sensitivity."
     ],
 
     objectivesTitle: "Project Objectives",
