@@ -1,6 +1,6 @@
 // config.js (Students edit only this file)
 window.SITE_CONFIG = {
-  pageTitle: "Academic Digital Twin Case Study | Student Showcase",
+  pageTitle: "SUMO Traffic Simulation Case Study | Student Showcase",
   homeUrl: "https://roadwayvr.com",
 
   hero: {
@@ -58,12 +58,12 @@ window.SITE_CONFIG = {
 
   intro: {
     projectTitleLabel: "Project Title",
-    projectTitle: "Development of Digital Twin of a Railway Corridor Using Unity Game Engine and SUMO Traffic Simulation",
+    projectTitle: "Evaluating AV Integration and Intersection Efficiency at Sheppard Ave W & Yonge St: A SUMO-Based Traffic Simulation and Demand Analysis",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
     heroVideoAlt: "Autoplay preview video (academic project)",
     videoCaption:
-      "Autoplay preview (≈20 seconds): raw video → Traffic Simulation → Blender → Unity → Results"
+      "Autoplay preview (≈20 seconds): GIS Network → SUMO Simulation → Scenario Comparison → Speed-Density Results"
   },
 
   caseStudy: {
@@ -71,26 +71,26 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Urban congestion in Toronto has reached severe levels, with drivers losing an average of 100 hours during rush hour.",
-			"Microscopic traffic simulation platforms like SUMO.",
-			"Connected Autonomous Vehicles (CAVs) have the potential to reduce human driving variability.",
-			"Traffic signal timing adjustments offer a cost-effective operational lever to reduce queueing."
+			"Urban congestion in Toronto has reached severe levels, with drivers losing an average of 100 hours during rush hour in 2025—up 3 hours and 50 minutes from 2024—ranking it among North America's most congested cities.",
+			"Microscopic traffic simulation platforms like SUMO allow engineers to model vehicle dynamics and test signal timings or vehicle technologies in a controlled, risk-free environment.",
+			"Connected Autonomous Vehicles (CAVs) can reduce human driving variability—such as reaction delays, acceleration noise, and large gaps—to improve flow stability and mitigate phantom congestion.",
+			"Traffic signal timing adjustments offer a cost-effective operational measure to reduce queueing and alleviate bottlenecks on primary approaches."
     ],
 
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Human-driven traffic (HDV) exhibits variance in perception, braking, and gaps that leads to congestion and stop-and-go instability.",
-			"Municipalities cannot infer 100% CAV fleet speed-density performance solely from human-driven baselines.",
-			"Signal re-timing requires quantitative before-and-after evidence, alongside assessment of potential side-street delay trade-offs.",
-			"Committing municipal capital investments without empirical field calibration, network-wide routing, and mixed-traffic sensitivity."
+			"Human-driven traffic (HDV) exhibits variance in perception, braking, and gaps that causes severe queueing and stop-and-go congestion near jam density on Edge E145.",
+			"Municipalities cannot infer 100% CAV fleet speed-density performance solely from HDV baselines without controlled comparisons under identical geometry, demand, and signal timing.",
+			"Signal timing modifications require quantitative before-and-after speed-density evidence, alongside evaluation of side-street delay trade-offs and single-edge scope limitations.",
+			"Committing municipal capital investments without empirical field calibration, network-wide routing, and mixed-traffic sensitivity testing poses financial and operational risks."
     ],
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-			"Build a digitized SUMO road network for Sheppard Ave W & Yonge St (Stage A1) and establish a 100% HDV baseline.",
-			"Evaluate and compare speed-density performance between a 100% HDV baseline and a 100% CAV.",
-			"Design, implement, and assess Intervention X (adding an 8-second left-turn advanced green within a 60-second cycle).",
-			"Identify modeling limitations and outline empirical data collection and network-wide evaluation."
+			"Develop a digitized SUMO road network for Sheppard Ave W & Yonge St (Stage A1) and characterize the 100% HDV baseline (Scenario A) speed-density relationship on approach Edge E145 (Stage A2).",
+			"Compare and evaluate speed-density performance on Edge E145 between the 100% HDV baseline (Scenario A) and a 100% CAV fleet (Scenario B) under identical conditions.",
+			"Select, justify, implement, and evaluate Intervention X (Scenario C: adding an 8-second left-turn advanced green within a 60-second cycle) on a 100% HDV fleet using before-and-after speed-density observations.",
+			"Identify modeling limitations and recommend empirical sensor data collection, network-wide analysis, and mixed-traffic testing prior to municipal capital investment."
     ]
   },
 
@@ -98,23 +98,23 @@ window.SITE_CONFIG = {
     title: "Methodology",
     steps: [
       {
-        title: "Step 1: Train Scheduling and Signaling (SUMO Simulation)",
-				text: "Build the rail network and test routing, signaling, and timetables.",
+        title: "Stage A1 & A2: Network & HDV Baseline (SUMO)",
+				text: "Digitize the Sheppard Ave W & Yonge St network in netedit and simulate the 100% HDV baseline on Edge E145.",
         image: "assets/img/image2.jpg"
       },
       {
-				title: "Step 2: Digital Twin Assets Developement (Blender)",
-				text: "Create a 3D railway assets using generative AI and blender.",
+				title: "Scenario B: Controlled 100% CAV Fleet",
+				text: "Configure automated car-following parameters (τ = 0.5s, σ = 0.0, s0 = 1.0m) under identical demand and signal timing.",
         image: "assets/img/image3.jpg"
       },
       {
-				title: "Step 3: Immersive VR Visualization (Unity)",
-				text: "Create a 3D railway scene and produce a VR 360-degree video.",
+				title: "Scenario C: Signal Intervention X",
+				text: "Add an 8-second left-turn advanced green within a 60-second cycle on a 100% HDV fleet and evaluate Edge E145.",
         image: "assets/img/image4.jpg"
       },
       {
-				title: "Step 4: Results & Communication (Figures + Showcase Website)",
-				text: "Summarize results using figures, KPIs, and the showcase website.",
+				title: "Speed-Density Analysis & Recommendations",
+				text: "Compare fitted vf and kj values, assess limitations, and outline empirical next steps for Toronto.",
         image: "assets/img/image5.jpg"
       }
     ]
@@ -124,38 +124,38 @@ window.SITE_CONFIG = {
     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
-        title: "Module 1: Train Scheduling & Signaling (SUMO)",
+        title: "Module 1: Roadway Network & HDV Baseline (SUMO)",
         bullets: [
-				  { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
-          { text: "Design fixed-block rail signals and define station stops along the corridor." },
-          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
+				  { text: "Digitize Sheppard Ave W & Yonge St geometry, lanes, turning bays, and junctions in netedit using aerial and GIS layers." },
+          { text: "Resolve TLS phase alignment with custom geometry and refine vehicle departure foresight to prevent artificial upstream bottlenecks." },
+          { text: "Run 3,600-second simulations (300s warmup) with 300 veh/h through and 150 veh/h turning demand, collecting 60s loop data on Edge E145." }
         ],
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: Digital Twin Assets Developement (Blender)",
+        title: "Module 2: Controlled 100% CAV Simulation (Scenario B)",
         bullets: [
-          { text: "Generative AI: use Meshy.ai tool to develop different assets." },
-          { text: "From generative AI to belnder." },
-          { text: "Preprocessing assets in Blender ." }
+          { text: "Retain identical network geometry, traffic demand, routing, turning ratios, and Lab 2 signal timing from the baseline." },
+          { text: "Update vehicle-following attributes to reaction time τ = 0.5s, imperfection σ = 0.0, and minimum gap s0 = 1.0m." },
+          { text: "Extract speed-density observations on Edge E145 to evaluate flow efficiency against the HDV baseline." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Immersive VR Visualization (Unity)",
+        title: "Module 3: Operational Signal Modification (Intervention X)",
         bullets: [
-				  { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
-          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
-          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
+				  { text: "Diagnose heavy queueing and densities over 200 veh/km on Edge E145 in the 100% HDV baseline." },
+          { text: "Add an 8-second left-turn advanced green while keeping a 60-second cycle by reducing through green to 19s with yellow transitions." },
+          { text: "Execute Scenario C with a 100% HDV fleet under identical demand and geometry for before-and-after comparison." }
         ],
         image: "assets/img/image4.jpg"
       },
       {
-        title: "Module 4: Results & Communication",
+        title: "Module 4: Speed-Density Evaluation & Next Steps",
         bullets: [
-          { text: "Dashboard or plot set: KPI cards, bar charts, and/or time series." },
-          { text: "Scenario story: what changed, what improved, and what tradeoffs appeared." },
-          { text: "Limitations + next steps: what data would strengthen confidence." }
+          { text: "Fit linear speed-density curves to evaluate free-flow speed (vf), jam density (kj), and correlation (R²) across scenarios." },
+          { text: "Examine congestion reduction benefits alongside potential cross-street delay transfers and re-timing costs." },
+          { text: "Highlight needs for empirical video/radar counts, network-wide modeling, and mixed HDV/CAV transition analysis." }
         ],
         image: "assets/img/image5.jpg"
       }
@@ -165,7 +165,7 @@ window.SITE_CONFIG = {
 	results: {
 			title: "Results & Potential Improvements",
 			subtitle:
-				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
+				"SUMO speed-density simulation results on approach Edge E145 across 100% HDV baseline, 100% CAV, and signal Intervention X scenarios. Results are for educational purposes only.",
 
 			charts: {
 				left: {
@@ -182,11 +182,11 @@ window.SITE_CONFIG = {
 
 			discussionTitle: "Discussion",
 			discussionBullets: [
-				"Scenario 1 provides a stable baseline timetable with consistent station dwell and smooth train progression.",
-				"Scenario 2 applies a delay at S2, which then propagates to downstream stations.",
-				"Delay effects grow across frequency levels, with major increases in arrival and departure times at S3 and S4.",
-				"S1 is only slightly affected, while downstream stations absorb most of the disruption.",
-				"This demonstrates the importance of recovery time, dwell management, and operational control in rail scheduling."
+				"The 100% HDV baseline on Edge E145 exhibits two-regime clustering with severe congestion near jam density (fitted vf = 14.14 m/s, kj = 259.2 veh/km, R² = 0.963).",
+				"The 100% CAV scenario shifts points into low-density free-flow operation under 25 veh/km (fitted vf = 15.71 m/s, kj = 118.7 veh/km, R² = 0.882) due to shorter reaction times, smaller gaps, and zero driver imperfection.",
+				"Because CAV points lack high-density observations above 50 veh/km, the extrapolated kj value is unverified and represents an idealized 100% CAV best case rather than mixed traffic.",
+				"Intervention X (8s left-turn advanced green) eliminates 200+ veh/km queue clusters on Edge E145, clustering data around 10–20 veh/km with vf = 16.84 m/s and kj = 79.4 veh/km.",
+				"Reducing cross-street green time by 15s may shift delays to intersecting approaches, so empirical demand calibration, network-wide modeling, and corridor cost analysis are needed before municipal investment."
 			]
 		},
 
@@ -196,14 +196,14 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Rumi Alkhani", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
+      { name: "Rumi Alkhani", role: "NexGen Transit Solutions — SUMO Network Modeling, CAV & Signal Intervention Simulation, Speed-Density Analysis" }
     ],
 
     acknowledgments: [
-      "Workshop: Railway Engineering",
-      "Institution: RoadwayVR University",
-      "Instructor: Ahmad Mohammadi",
-      "Tools: SUMO, Blender, Unity, Python"
+      "Course: Smart Cities and Communities (SMRTTECH 4SC3)",
+      "Institution: McMaster University, Hamilton, Ontario, Canada",
+      "Team: Rumi Alkhani, Samuel Rosales, Oliver Naruse, Viroz D’Souza",
+      "Tools: SUMO (netedit), GIS / Aerial Imagery, Python"
     ],
 
     repoLabel: "Project Repository",
