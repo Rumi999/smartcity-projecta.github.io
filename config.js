@@ -71,26 +71,35 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Urban congestion in Toronto has reached severe levels, with drivers losing an average of 100 hours during rush hour in 2025—up 3 hours and 50 minutes from 2024—ranking it among North America's most congested cities.",
-			"Microscopic traffic simulation platforms like SUMO allow engineers to model vehicle dynamics and test signal timings or vehicle technologies in a controlled, risk-free environment.",
-			"Connected Autonomous Vehicles (CAVs) can reduce human driving variability—such as reaction delays, acceleration noise, and large gaps—to improve flow stability and mitigate phantom congestion.",
-			"Traffic signal timing adjustments offer a cost-effective operational measure to reduce queueing and alleviate bottlenecks on primary approaches."
+			 "Urban congestion in Toronto has reached severe levels, with drivers losing an average of 100 hours during rush hour.",
+
+"Microscopic traffic simulation platforms like SUMO.",
+
+"Connected Autonomous Vehicles (CAVs) have the potential to reduce human driving variability.",
+
+"Traffic signal timing adjustments offer a cost-effective operational lever to reduce queueing." 
     ],
 
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Human-driven traffic (HDV) exhibits variance in perception, braking, and gaps that causes severe queueing and stop-and-go congestion near jam density on Edge E145.",
-			"Municipalities cannot infer 100% CAV fleet speed-density performance solely from HDV baselines without controlled comparisons under identical geometry, demand, and signal timing.",
-			"Signal timing modifications require quantitative before-and-after speed-density evidence, alongside evaluation of side-street delay trade-offs and single-edge scope limitations.",
-			"Committing municipal capital investments without empirical field calibration, network-wide routing, and mixed-traffic sensitivity testing poses financial and operational risks."
+			 "Human-driven traffic (HDV) exhibits variance in perception, braking, and gaps that leads to congestion and stop-and-go instability.",
+
+"Municipalities cannot infer 100% CAV fleet speed-density performance solely from human-driven baselines.",
+
+"Signal re-timing requires quantitative before-and-after evidence, alongside assessment of potential side-street delay trade-offs.",
+
+"Committing municipal capital investments without empirical field calibration, network-wide routing, and mixed-traffic sensitivity." 
     ],
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-			"Develop a digitized SUMO road network for Sheppard Ave W & Yonge St (Stage A1) and characterize the 100% HDV baseline (Scenario A) speed-density relationship on approach Edge E145 (Stage A2).",
-			"Compare and evaluate speed-density performance on Edge E145 between the 100% HDV baseline (Scenario A) and a 100% CAV fleet (Scenario B) under identical conditions.",
-			"Select, justify, implement, and evaluate Intervention X (Scenario C: adding an 8-second left-turn advanced green within a 60-second cycle) on a 100% HDV fleet using before-and-after speed-density observations.",
-			"Identify modeling limitations and recommend empirical sensor data collection, network-wide analysis, and mixed-traffic testing prior to municipal capital investment."
+			 "Build a digitized SUMO road network for Sheppard Ave W & Yonge St (Stage A1) and establish a 100% HDV baseline.",
+
+"Evaluate and compare speed-density performance between a 100% HDV baseline and a 100% CAV.",
+
+"Design, implement, and assess Intervention X (adding an 8-second left-turn advanced green within a 60-second cycle).",
+
+"Identify modeling limitations and outline empirical data collection and network-wide evaluation." 
     ]
   },
 
