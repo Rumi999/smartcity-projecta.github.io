@@ -169,14 +169,14 @@ window.SITE_CONFIG = {
 
 			charts: {
 				left: {
-					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
+					title: "Base Scenario: 100% HDV",
 					src: "assets/img/image6.jpg",
-					alt: "Scenario 1 train schedule chart showing arrivals and departures across S1 to S4"
+					alt: "Base Scenario: 100% HDV"
 				},
 				right: {
-					title: "Scenario 2 — Train Schedule: Arrivals, Departures & Dwell Time",
+					title: "Scenario 1 — 100% CAV",
 					src: "assets/img/image7.jpg",
-					alt: "Scenario 2 train schedule chart showing arrivals and departures across S1 to S4"
+					alt: "Scenario 1 100% CAV"
 				}
 			},
 
@@ -196,7 +196,7 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Your Name", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
+      { name: "Rumi Alkhani", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
     ],
 
     acknowledgments: [
