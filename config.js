@@ -71,10 +71,10 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Urban congestion in Toronto has reached severe levels, with drivers losing an average of 100 hours during rush hour in 2025—up 3 hours and 50 minutes from 2024—ranking it among North America's most congested cities.",
-			"Microscopic traffic simulation platforms like SUMO enable risk-free testing of emerging mobility solutions and signal modifications before costly physical deployments.",
-			"Connected Autonomous Vehicles (CAVs) have the potential to reduce human driving variability—such as reaction delays, acceleration noise, and large gaps—to improve flow stability and mitigate "phantom congestion.",
-			"Traffic signal timing adjustments offer a cost-effective operational lever to reduce queueing and improve intersection throughput."
+			"Urban congestion in Toronto has reached severe levels, with drivers losing an average of 100 hours during rush hour.",
+			"Microscopic traffic simulation platforms like SUMO.",
+			"Connected Autonomous Vehicles (CAVs) have the potential to reduce human driving variability.",
+			"Traffic signal timing adjustments offer a cost-effective operational lever to reduce queueing."
     ],
 
     problemTitle: "Problem Statement",
