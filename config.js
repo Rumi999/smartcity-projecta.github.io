@@ -87,10 +87,10 @@ window.SITE_CONFIG = {
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-			"Simulate train scheduling, signaling, and capacity in SUMO.",
-			"Create 3D digital assets using generative AI and blender.",
-			"Create 3D rail environment and VR video in Unity.",
-			"Present results in different styles through KPIs, figures, and a showcase website."
+			"Build a digitized SUMO road network for Sheppard Ave W & Yonge St (Stage A1) and establish a 100% HDV baseline.",
+			"Evaluate and compare speed-density performance between a 100% HDV baseline and a 100% CAV.",
+			"Design, implement, and assess Intervention X (adding an 8-second left-turn advanced green within a 60-second cycle).",
+			"Identify modeling limitations and outline empirical data collection and network-wide evaluation."
     ]
   },
 
