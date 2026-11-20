@@ -71,10 +71,10 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Global freight rail is growing and remains strategically important.",
-			"Rail carries about 18% of EU inland freight, 36% in the U.S., and 27% in India.",
-			"Road dominates many freight systems, so rail often receives less attention.",
-			"In Canada, rail accounted for 10.5% of international merchandise trade value in 2024."
+			"Urban congestion in Toronto has reached severe levels, with drivers losing an average of 100 hours during rush hour in 2025—up 3 hours and 50 minutes from 2024—ranking it among North America's most congested cities.",
+			"Microscopic traffic simulation platforms like SUMO enable risk-free testing of emerging mobility solutions and signal modifications before costly physical deployments.",
+			"Connected Autonomous Vehicles (CAVs) have the potential to reduce human driving variability—such as reaction delays, acceleration noise, and large gaps—to improve flow stability and mitigate "phantom congestion.",
+			"Traffic signal timing adjustments offer a cost-effective operational lever to reduce queueing and improve intersection throughput."
     ],
 
     problemTitle: "Problem Statement",
